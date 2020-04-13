@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+<title>Sprawdz</title>
+<style>
+.table 
+{ margin:auto;display :table ;border-collapse :collapse;}
+.tbody
+{ display :table-row-group;width:600px;height:100px}
+.row
+{ display :table-row;}
+.cell{border:1px solid black ;display :table-cell;}
+</style>
+<script language="JavaScript">
+function f(){
+var x = input1.value
+if(x==""){
+p1.style.color="red"
+p1.innerHTML="WPISZ HASŁO" 
+} else if(x.search("[0-9]")>=0 && x.length>6)
+{
+p1.style.color="green"
+p1.innerHTML="DOBRE"}
+else if(x.search("[0-9]")>=0 && x.length>=4 && x.length<=6)
+{ p1.style.color="blue"
+p1.innerHTML="ŚREDNIE" }
+else {
+p1.style.color="yellow"
+p1.innerHTML="SŁABE"
+}
+}
+</script>
+</head>
+<body>
+<div class="table" style="width:800pt"> 
+<div class="tbody">  
+<div class="row">   
+<div class="cell" style="text-align:center;background-color:lightpink"><b>Weryfikacja jakości hasła</b></div></div>
+<div class="tbody">       
+<div class="row">   
+<div class="cell" style="text-align:left;width:500px;height:50px;vertical-align:top">Wybierz opcję :<li><a href="z3.html" style=color:purple>Strona glówna</a></li><li><a href="reguly.html" style=color:purple>Reguły tworzenia hasła</a></li></div> 
+<div class="cell" style="text-align:center;background-color:ivory;width:1100px;height:50px">
+<p><b>Wpisz hasło:</b> <input type="password" id="input1">
+<input type="button" value="Weryfikuj" onclick="f()">
+</p>
+<p id="p1">
+</p></p></div></div></div>
+</body>
+</html>
