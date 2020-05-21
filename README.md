@@ -1,4 +1,4 @@
-# Html code
+# Html code :sunglasses:
 
 #### Serves to check the password for status (depending on the amount of data entered and the variety of characters) :computer: : 
 
@@ -8,4 +8,4 @@
 
 - strong :muscle:
 
->Inside the code, you can change the rules by which it recognizes the complexity of the password
+>Inside the code, you can change the rules by which it recognizes the complexity of the password ( with the help of script )
